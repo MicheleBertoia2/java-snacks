@@ -78,36 +78,43 @@ public class Snacks {
 		
 		
 		//-------------------------------- ES 5
+//		boolean again = true;
+//		
+//		
+//		while (again) {
+//			System.out.println("Inserisci una frase");
+//			String str = sc.nextLine();
+//
+//			if(str.equals("o"))
+//			{
+//				again = false;
+//				
+//			}
+//
+//			int lngStr = str.length();
+//			int incrementoNumeri = 0;
+//			int incrementoCaratteri = 0;
+//
+//			for(int i = 0; i < str.length(); i++)
+//			{
+//				Character ch = str.charAt(i);
+//				if(ch.isLetter(ch))
+//				{
+//					incrementoCaratteri++;
+//				}
+//				if(ch.isDigit(ch))
+//				{
+//					incrementoNumeri++;
+//				}
+//
+//			}
+//
+//			System.out.println("caratteri alfabetici totali: " + incrementoCaratteri );
+//			System.out.println("numeri totali: " + incrementoNumeri );
+//			System.out.println("caratteri non alfanumerici totali: " + (lngStr - incrementoCaratteri - incrementoNumeri) );	
+//		}
 		
-		System.out.println("Inserisci una frase");
-		String str = sc.nextLine();
-
 		
-		
-		String caratteri = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        String numeri = "1234567890";
-        
-        int lngStr = str.length();
-        int incrementoNumeri = 0;
-        int incrementoCaratteri = 0;
-        
-        for(int i = 0; i < str.length(); i++)
-        {
-        	Character ch = str.charAt(i);
-        	if(ch.isLetter(ch))
-        	{
-        		incrementoCaratteri++;
-        	}
-        	if(ch.isDigit(ch))
-        	{
-        		incrementoNumeri++;
-        	}
-        	
-        }
-        
-        System.out.println("caratteri alfabetici totali: " + incrementoCaratteri );
-        System.out.println("numeri totali: " + incrementoNumeri );
-        System.out.println("caratteri non alfanumerici totali: " + (lngStr - incrementoCaratteri - incrementoNumeri) );
 		
 		
 		// ----------------------------------- ES6
@@ -240,7 +247,84 @@ public class Snacks {
 //				+ " secondi -> " 
 //				+ outputH + "ore:" 
 //				+ outputMin + "min:" 
-//				+ outputSec + "sec");			
+//				+ outputSec + "sec");
+		
+		// ----------------------------------- ES 8
+//		
+//		int[] arr = new int[10];
+//		Random rnd = new Random(); 
+//		
+//		for(int i = 0; i < 10; i++)
+//		{
+//			arr[i] = rnd.nextInt(100, 150);
+//			System.out.println(arr[i]);
+//		}
+		
+		
+		// ---------------------------------------es 9
+		
+//		int sum = 0;
+//		
+//		while (sum < 1000) {
+//			
+//			System.out.println("inserisci un numero fino ad arrivare a mille");
+//			int input = sc.nextInt();
+//			
+//			sum += input;
+//			
+//			System.out.println("somma: " + sum);
+//		}
+		
+		
+		//-------------------------------------- ES 10
+		
+		
+		int[] arr = new int[10];
+		Random rnd = new Random(); 
+		
+		for(int i = 0; i < 10; i++)
+		{
+			arr[i] = rnd.nextInt(100, 1000);
+			System.out.println("membro array " + arr[i]);
+		
+		}
+		
+		for(int i = 0; i < 10; i++)
+		{
+			if(arr[i] % 2 == 0)
+			{
+				System.out.println("elemento pari " +arr[i]);
+			}
+				
+		}
+		
+		for(int i = 0; i < 10; i++)
+		{
+			if(!(arr[i] % 2 == 0))
+			{
+				System.out.println("elemento dispari " +arr[i]);
+			}
+				
+		}
+		
+		for(int i = 0; i < 10; i++)
+		{
+			if(!(i % 2 == 0))
+			{
+				System.out.println("indice dispari " +arr[i]);
+			}
+				
+		}
+		
+		for(int i = 0; i < 10; i++)
+		{
+			if(i % 2 == 0)
+			{
+				System.out.println("indice pari " +arr[i]);
+			}
+				
+		}
+		
 		
 		
 		//FINE ESERCIZI
